@@ -1,0 +1,149 @@
+@import "reset.css";
+@import "typography.css";
+@import "colors.css";
+
+* {
+  transition: all 0.2s ease;
+}
+body {
+  background-image: url("../img/lance-anderson-QdAAasrZhdk-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.header {
+  background-color: var(--color-bg);
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  padding-inline: 4rem;
+}
+.header_navigation {
+  display: grid;
+  gap: 12rem;
+  margin-left: auto;
+}
+.header_navigation ul li {
+  display: inline;
+  align-items: center;
+  padding: 1rem;
+}
+
+.menu_link {
+  font-size: 1.8rem;
+  font-weight: 300;
+  color: var(--color-main);
+  /* text-decoration: none; */
+}
+.menu_link:hover {
+  color: var(--accent-red);
+}
+
+.main {
+  padding-block: 6rem;
+  margin-bottom: 30rem;
+}
+
+/* .sidebar {
+  height: 100dvh;
+  background-color: var(--color-second);
+  font-size: 1.8rem;
+  font-weight: 100;
+  color: var(--color-fifth);
+  padding-inline: 2rem;
+  box-shadow: 0.3rem 0 0.6rem 0.1rem #415a777c;
+} */
+
+/* .mainHeading {
+  position: relative;
+  display: grid;
+  height: 15rem;
+  place-content: center;
+  color: var(--color-fifth);
+  font-weight: 200;
+} */
+/* .subHeading { */
+/* font-size: 0.7em;
+  font-size: 3rem;
+  font-weight: 300;
+  color: var(--color-fourth);
+  text-align: center;
+  padding-bottom: 1rem;
+} */
+/* .copyright {
+  position: absolute;
+  bottom: 0.8rem;
+  right: 2rem;
+  font-size: 1.2rem;
+  color: var(--color-fourth-tint);
+} */
+
+.hero_container {
+  display: grid;
+  place-content: center;
+  width: 40vw;
+  height: 35rem;
+  padding-inline: 2rem;
+  margin-left: 2rem;
+}
+.slogan_text_content {
+  font-size: 2.4rem;
+  font-weight: 300;
+  color: var(--color-third-tint);
+}
+
+.mainContainer {
+  background-color: var(--color-bg);
+  display: flex;
+  flex-direction: column;
+  font-size: 2rem;
+  font-weight: 300;
+  color: var(--color-main);
+  padding: 2rem 2rem 3rem 2rem;
+}
+.main_tasks {
+  background-color: var(--color-bg);
+  width: fit-content;
+  height: 10rem;
+  display: grid;
+  place-items: center;
+  margin: 0 auto;
+}
+.main_task {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+}
+.task_elemenet {
+  font-weight: 200;
+  color: var(--color-fourth-shade);
+  padding-inline: 1rem;
+}
+.v_separator {
+  width: 0.8px;
+  height: 5rem;
+  background-color: var(--color-fourth-tint);
+}
+.h_separator {
+  /* display: grid; */
+  /* place-content: center; */
+  width: 80%;
+  height: 0.8px;
+  margin: 2rem auto;
+  background-color: var(--color-fifth-tint);
+}
+.footer {
+  background-color: var(--color-bg);
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  padding-inline: 4rem;
+}
+
+@media (max-width: 1024px) {
+  h1 {
+    font-size: clamp(1.6rem, 2vw, 3.2rem);
+  }
+}
