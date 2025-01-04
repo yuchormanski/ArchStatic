@@ -231,7 +231,7 @@ body {
 
 @media (max-width: 430px) {
   .hero_container {
-    width: 100dvw;
+    width: 90dvw;
     padding: 0;
   }
   .hero_container h1 {
