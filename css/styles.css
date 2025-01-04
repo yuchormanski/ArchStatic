@@ -220,6 +220,19 @@ body {
   opacity: 0.5;
 }
 
+.scrollToTopBtn {
+  background-color: var(--color-bg);
+  width: fit-content;
+  aspect-ratio: 1/1;
+  display: grid;
+  place-content: center;
+  margin: 0 2rem 1rem auto;
+  font-size: clamp(1.6em, 2vw, 3.2rem);
+  padding: 1.2rem;
+  border-radius: 50%;
+  border: 1px solid var(--color-fifth);
+  box-shadow: 0px 2px 4px 0px var(--color-shadow);
+}
 .footer {
   background-color: var(--color-bg);
   width: 100%;

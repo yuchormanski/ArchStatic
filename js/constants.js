@@ -18,3 +18,10 @@ function toggleMenu() {
     menuList.style.display = "grid";
   }
 }
+
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+}
