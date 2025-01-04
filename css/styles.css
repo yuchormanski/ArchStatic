@@ -38,6 +38,9 @@ body {
 .mobile_menu {
   display: none;
 }
+.mobile_menu_list {
+  display: none;
+}
 
 .menu_link {
   font-size: 1.8rem;
@@ -232,10 +235,9 @@ body {
     font-size: clamp(2rem, 2.2vw, 3.2rem);
   }
 }
-
-@media (max-width: 430px) {
+@media (max-width: 640px) {
   body {
-    background-size: unset;
+    /* background-size: unset; */
   }
   .header {
     padding-inline: 2rem;
@@ -251,8 +253,25 @@ body {
   .ph {
     font-size: 4rem;
   }
-  .mobile_menu:hover {
-    /* transform: rotate(90deg); */
+}
+
+@media (max-width: 430px) {
+  body {
+    /* background-size: unset; */
+  }
+  .header {
+    padding-inline: 2rem;
+  }
+  .header_navigation {
+    display: none;
+  }
+  .mobile_menu {
+    display: block;
+    transition: transform 0.7s ease-in-out;
+    margin-left: auto;
+  }
+  .ph {
+    font-size: 4rem;
   }
 
   .mobile_menu_list {
