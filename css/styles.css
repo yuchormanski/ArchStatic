@@ -204,3 +204,10 @@ body {
     font-size: clamp(1.6rem, 2vw, 3.2rem);
   }
 }
+
+@media (max-width: 430px) {
+  .project_container {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 2rem 1rem 2rem 1rem;
+  }
+}
