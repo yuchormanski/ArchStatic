@@ -8,3 +8,13 @@ document.addEventListener("DOMContentLoaded", () => {
     yearElement.textContent = getFullYear();
   }
 });
+
+function toggleMenu() {
+  const menu = document.querySelector(".mobile_menu");
+  let menuList = document.querySelector(".mobile_menu_list");
+  if (menuList.style.display === "grid") {
+    menuList.style.display = "none";
+  } else {
+    menuList.style.display = "grid";
+  }
+}

@@ -26,6 +26,35 @@
           <li><a class="menu_link" href="about.html">About</a></li>
         </ul>
       </nav>
+
+      <ul class="mobile_menu_list">
+        <li>
+          <span><i class="ph ph-house"></i></span>
+          <a class="menu_link" href="index.html" onclick="toggleMenu()">Home</a>
+        </li>
+        <li>
+          <span><i class="ph ph-stack"></i></span>
+          <a class="menu_link" href="projects.html" onclick="toggleMenu()">
+            Projects</a
+          >
+        </li>
+        <li>
+          <span><i class="ph ph-at"></i></span>
+          <a class="menu_link" href="contacts.html" onclick="toggleMenu()">
+            Contact</a
+          >
+        </li>
+        <li>
+          <span><i class="ph ph-info"></i></span>
+          <a class="menu_link" href="about.html" onclick="toggleMenu()">
+            About</a
+          >
+        </li>
+      </ul>
+
+      <menu class="mobile_menu" onclick="toggleMenu()">
+        <i class="ph ph-list"></i>
+      </menu>
     </header>
 
     <main class="main">
@@ -144,11 +173,12 @@
     </main>
     <footer class="footer">
       <p class="">
-        Copyrights &copy; - <span class="footer-year"></span>Atanas Dimitrov
+        Copyrights &copy; - <span class="footer-year"></span> - Atanas Dimitrov
         <!-- document.write(new Date().getFullYear()); -->
       </p>
       <span>Yucho</span>
     </footer>
   </body>
   <script type="text/javascript" src="js/constants.js"></script>
+  <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
 </html>
