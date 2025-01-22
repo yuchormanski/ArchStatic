@@ -5,7 +5,12 @@
         "appIDs": [
           "com.rezonmedia.app.bazar"
         ],
-        "components": []
+        "components": [
+          {
+            "/": "/stock/*",
+            "comment": "Matches any URL whose path starts with /stock/"
+          }
+        ]
       }
     ]
   }
